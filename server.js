@@ -33,7 +33,7 @@ app.get('/', (req, res) =>
 );
 
 app.get('/json', (req, res) =>
-  res.json({ 'message': 'Hellow json' })
+  res.json({ 'message': 'Hello json' })
 );
 
 var port = process.env.PORT || 3000;
