@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/', (req, res) =>
-  res.sendFile(__dirname, '/views/index.html')
+  res.sendFile(path.join(__dirname, '/views/index.html'))
 );
 
 var port = process.env.PORT || 3000;
