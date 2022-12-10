@@ -21,10 +21,10 @@ if (!process.env.DISABLE_XORIGIN) {
   });
 }
 
-app.get('/', (req, res) => {
-  res.send('Hello Express');
-  console.log(res.send);
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello Express');
+//   console.log(res.send);
+// });
 
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/views/index.html'))
