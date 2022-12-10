@@ -43,9 +43,7 @@ else {
   app.get('/json', function (req, res) {
     return res.json({ 'message': 'Hello json' })
   });
-
 }
-);
 
 var port = process.env.PORT || 3000;
 bGround.setupBackgroundApp(app, myApp, __dirname).listen(port, function () {
